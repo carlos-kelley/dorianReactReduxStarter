@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+// import our component
+import HelloWorld from '../HelloWorld/HelloWorld';
 
 function App() {
     return (
@@ -7,11 +9,12 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Dorian React Intro</h1>
         </header>
-        <div>
+        <div className="body">
           <p>
-            body text
+            hello world from ReactJS!
           </p>
         </div>
+        <HelloWorld />
       </div>
     );
 }
