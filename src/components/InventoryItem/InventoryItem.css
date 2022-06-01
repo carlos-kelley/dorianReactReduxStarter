@@ -1,0 +1,18 @@
+.listItem{
+    width: 30%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 4px;
+    padding: 7px;
+    margin: 2px;
+    float: left;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: darkblue;
+}

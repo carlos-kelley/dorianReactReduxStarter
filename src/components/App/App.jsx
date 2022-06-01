@@ -11,10 +11,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Dorian React Intro</h1>
-          <p>appClicks: { appClicks }</p>
         </header>
         <Body />
-        <HelloWorld taco="delicious" setAppClicks={setAppClicks}/>
       </div>
     );
 }
