@@ -6,8 +6,11 @@ import App from './components/App/App.jsx';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux'; 
 // step 1 - declare reducers
-const testReducer = ( state='hello world', action ) =>{
+const testReducer = ( state='hello world from a reducer', action ) =>{
     console.log( 'in testReducer:', action );
+    if( action.type === 'CHANGE_TEXT' ){
+        state = action.payload;
+    }
     return state;
 } // end reducer (it is just a function)
 // step 2 - create store & combine reducers
